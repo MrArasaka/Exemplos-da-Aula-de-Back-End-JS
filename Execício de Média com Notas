@@ -1,0 +1,21 @@
+n1 = prompt("Qual a sua primeira nota: ")
+n2 = prompt("Qual a sua segunda nota: ")
+n3 = prompt("Qual a sua terceira nota: ")
+n4 = prompt("Qual a sua quarta nota: ")
+n5 = prompt("Qual a sua quinta nota: ")
+
+
+
+nota1 = parseFloat(n1)
+nota2 = parseFloat(n2)
+nota3 = parseFloat(n3)
+nota4 = parseFloat(n4)
+nota5 = parseFloat(n5)
+
+
+if (isNaN(nota1) || isNaN(nota2) || isNaN(nota3) || isNaN(nota4) && isNaN(nota5)){
+  console.log("Digite apenas numeros")
+} else {
+  media = (nota1 + nota2 + nota3 + nota4 + nota5)/ 5
+  console.log("Sua media foi: " + media)
+}
