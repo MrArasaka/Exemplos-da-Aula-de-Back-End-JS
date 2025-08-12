@@ -1,0 +1,9 @@
+temperaturaAtual = prompt("Me diga a temperatura do ambiente em Fahrenheit, transformarei em Celsius: ")
+temperaturaF = parseFloat(temperaturaAtual)
+
+if (isNaN(temperaturaF)){
+  console.log("Temperatura inválida")
+} else {
+  temperaturaCelsius = (5*(temperaturaF - 32))/9
+  console.log("A temperatura do local em Fahrenheit: " + temperaturaCelsius)
+}
