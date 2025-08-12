@@ -1,0 +1,15 @@
+ladoPrimeiro = prompt("Me diga o primeiro lado do triângulo: ")
+ladoSegundo = prompt("Me diga o segundo lado do triângulo: ")
+
+lado1 = parseFloat(ladoPrimeiro)
+lado2 = parseFloat(ladoSegundo)
+
+if (isNaN(lado1) || isNaN(lado2)) {
+  console.log("Digite apenas números: ")
+} else { 
+  x1 = Math.pow(lado1,2)
+  x2 = Math.pow(lado2,2)
+  y = x1 + x2
+  hipotenusa = Math.sqrt(y)
+  console.log("A hipotenusa deu: " + hipotenusa)
+}
