@@ -1,0 +1,14 @@
+n1 = parseFloat(prompt("Diga um número para a variável n1: "))
+n2 = parseFloat(prompt("Diga outro número para a variável n2: "))
+
+console.log("Valor de n1: " + n1)
+console.log("Valor de n2: " + n2)
+
+
+n1 = n1 + n2  
+n2 = n1 - n2  
+n1 = n1 - n2
+
+console.log("Ápos a mudança")
+console.log("Valor de n1: " + n1)
+console.log("Valor de n2: " + n2)
