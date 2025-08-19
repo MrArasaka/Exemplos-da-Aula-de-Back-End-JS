@@ -1,10 +1,10 @@
-pesoDado = prompt("Me diga seu peso: ")
-alturaDado = prompt("Me diga sua altura: ")
+pesoDado = prompt("Me diga seu peso: ").replace(',','.')
+alturaDado = prompt("Me diga sua altura: ").replace(',','.')
 
 peso = parseFloat(pesoDado)
 altura = parseFloat(alturaDado)
 
 
 imc = peso/Math.pow(altura, 2)
-imcFormatado = imc.toFixed(2)
+imcFormatado = imc.toFixed(2).replace('.',',')
 console.log("Seu imc é de: " + imcFormatado)
