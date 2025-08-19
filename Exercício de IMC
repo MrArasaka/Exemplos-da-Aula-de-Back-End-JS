@@ -4,5 +4,7 @@ alturaDado = prompt("Me diga sua altura: ")
 peso = parseFloat(pesoDado)
 altura = parseFloat(alturaDado)
 
+
 imc = peso/Math.pow(altura, 2)
-console.log("Seu imc é de: " + imc)
+imcFormatado = imc.toFixed(2)
+console.log("Seu imc é de: " + imcFormatado)
