@@ -1,0 +1,15 @@
+nota = 2
+
+if (nota >= 9){
+  console.log("Excelente!")
+} else if (nota >= 6) {
+  console.log("Aprovado!")
+} else {
+  console.log("Reprovado!")
+}
+
+/* Outra opção, mas n existe o uso do else if */
+
+idade = 16
+situacao = (idade >= 18) ? "Adulto" : "Menor"
+console.log(situacao)
