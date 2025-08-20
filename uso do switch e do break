@@ -1,0 +1,23 @@
+dia = 1
+
+switch(dia){
+  case 1:
+    nomeDia1 = "Segunda"
+  case 2:
+    nomeDia = "Terça"
+    break
+  case 3:
+    nomeDia = "Quarta"
+    break
+  case 4:
+    nomeDia = "Quinta"
+    break
+  case 5:
+    nomeDia = "Sexta"
+    break
+  default:
+    nomeDia = "Dia invalido"
+}
+
+console.log(nomeDia1,nomeDia)
+// o break evita dele cair no proximo case. O default é opcional, mas recomendado
