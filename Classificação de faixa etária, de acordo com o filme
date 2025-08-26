@@ -1,0 +1,14 @@
+classificacao = prompt("Diga a classificação do filme");
+classificacaoNumero = parseFloat(classificacao)
+
+if(classificacaoNumero < 12){
+    console.log("Classificação: Livre")
+} else if (classificacaoNumero >= 12 && classificacaoNumero <= 14) {
+    console.log("Classificação: +12")
+} else if (classificacaoNumero >= 15 && classificacaoNumero <= 17) {
+    console.log("Classificação: +15")
+} else if (classificacaoNumero > 17) {
+    console.log("Classificação: +18")
+} else {
+    console.log("Escreva a classificação corretamente")
+}
