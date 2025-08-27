@@ -1,14 +1,18 @@
-classificacao = prompt("Diga a classificação do filme");
-classificacaoNumero = parseFloat(classificacao)
+numero1 = parseFloat(prompt("Diga um numero: "))
+numero2 = parseFloat(prompt("Diga um  segundo numero: "))
+numero3 = parseFloat(prompt("Diga um  terceiro numero: "))
 
-if(classificacaoNumero < 12){
-    console.log("Classificação: Livre")
-} else if (classificacaoNumero >= 12 && classificacaoNumero <= 14) {
-    console.log("Classificação: +12")
-} else if (classificacaoNumero >= 15 && classificacaoNumero <= 17) {
-    console.log("Classificação: +15")
-} else if (classificacaoNumero > 17) {
-    console.log("Classificação: +18")
+maiorNumero = numero1
+
+if (isNaN(numero1) || isNaN(numero2) || isNaN(numero3)){
+    console.log("Escreva somente números")
 } else {
-    console.log("Escreva a classificação corretamente")
+    if (numero2 > maiorNumero){
+    maiorNumero = numero2
+    } else if (numero3 > maiorNumero){
+    maiorNumero = numero3
+    }
+
+console.log(maiorNumero)
 }
+
