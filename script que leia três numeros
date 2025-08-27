@@ -1,0 +1,18 @@
+numero1 = parseFloat(prompt("Diga um numero: "))
+numero2 = parseFloat(prompt("Diga um  segundo numero: "))
+numero3 = parseFloat(prompt("Diga um  terceiro numero: "))
+
+if (isNaN(numero1) || isNaN(numero2) || isNaN(numero3)){
+    console.log("Escreva somente números")
+}
+
+maiorNumero = numero1
+
+if (numero2 > maiorNumero){
+    maiorNumero = numero2
+} else if (numero3 > maiorNumero){
+    maiorNumero = numero3
+} 
+
+
+console.log(maiorNumero)
