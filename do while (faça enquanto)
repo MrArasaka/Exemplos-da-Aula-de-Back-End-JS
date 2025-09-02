@@ -1,0 +1,6 @@
+contador = 9
+
+do{
+  console.log ("Número: " + contador);
+  contador++;
+} while (contador <= 5)
