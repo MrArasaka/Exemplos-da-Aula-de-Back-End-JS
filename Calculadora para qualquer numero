@@ -1,0 +1,5 @@
+numero = parseFloat(prompt("Qual a tabuada você deseja: "))
+
+for(contador = 1; contador <= 10; contador ++){
+  console.log(numero +" x "+ contador +" = "+ (contador*numero).toFixed(2))
+}
