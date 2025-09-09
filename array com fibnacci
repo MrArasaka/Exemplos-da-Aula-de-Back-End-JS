@@ -1,0 +1,11 @@
+fibonacci = [1,2,3,5,8,13]
+
+console.log(fibonacci) //[1,2,3,5,8,13]
+console.log(fibonacci[0]) //[1,2,3,5,8,13]
+
+fibonacci[0] = 9
+console.log(fibonacci)
+
+fibonacci[0] = 1
+fibonacci[6] = 21
+console.log(fibonacci)
