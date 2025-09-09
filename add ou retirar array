@@ -10,3 +10,16 @@ console.log(fibonacci)
 
 delete fibonacci[4]
 console.log(fibonacci)
+
+
+fibonacci = [1,2,3,5,13]
+console.log(fibonacci)
+console.log(fibonacci.length)
+
+fibonacci.splice(1,2)
+console.log(fibonacci)
+console.log(fibonacci.length)
+
+fibonacci.splice(1,0,34,56)
+console.log(fibonacci)
+console.log(fibonacci.length)
