@@ -1,0 +1,12 @@
+fibonacci = [1, 2, 3, 4]
+fibonacci.length = 8
+console.log(fibonacci)
+
+for (indice = 0; indice < fibonacci.length; indice++) {
+  console.log(fibonacci[indice])
+}
+
+for(elemento in fibonacci){
+    console.log(elemento)
+    console.log(fibonacci.length)
+}
