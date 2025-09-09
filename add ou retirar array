@@ -7,3 +7,6 @@ console.log(fibonacci)
 tamanho = fibonacci.push(21)
 console.log(tamanho)
 console.log(fibonacci)
+
+delete fibonacci[4]
+console.log(fibonacci)
