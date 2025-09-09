@@ -1,0 +1,9 @@
+tamanho = 0
+fibonacci = [1,2,3,5,8,13]
+tamanho = fibonacci.unshift(0)
+console.log(tamanho)
+console.log(fibonacci)
+
+tamanho = fibonacci.push(21)
+console.log(tamanho)
+console.log(fibonacci)
