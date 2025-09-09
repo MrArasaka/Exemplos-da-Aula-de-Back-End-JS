@@ -1,0 +1,6 @@
+numerosPrimos = [2,3,4,5,7];
+diversos = [1.1,,true,"a"];
+
+console.log(typeof(diversos))
+console.log(numerosPrimos)
+console.log(diversos)
