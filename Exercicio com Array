@@ -1,0 +1,15 @@
+qntsNum = parseInt(prompt("Quantos numeros: "))
+
+listaNum = new Array(qntsNum);
+soma = 0;
+
+for (indice = 0; indice < listaNum.length; indice++) {
+    num = parseFloat(prompt("Diga um número:"));
+    listaNum[indice] = num;
+    soma += listaNum[indice];
+}
+
+media = soma / listaNum.length;
+
+console.log("Números:", listaNum);
+console.log("Média:", media);
