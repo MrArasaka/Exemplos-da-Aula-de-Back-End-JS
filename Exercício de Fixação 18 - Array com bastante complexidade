@@ -1,0 +1,36 @@
+qntsNum = parseInt(prompt("Quantos numeros: "))
+
+listaNum = new Array(qntsNum)
+
+menor = listaNum[0]
+soma = 0
+
+for (indice = 0; indice < listaNum.length; indice++) {
+  num = parseFloat(prompt("Diga um número:"))
+  listaNum[indice] = num
+  soma += num
+  if (indice == 0) {
+    menor = num
+    maior = num
+  } else {
+    if (num < menor) {
+      menor = num
+    }
+    if (num > maior) {
+      maior = num
+    }
+  }
+}
+media = soma / listaNum.length
+maiorMedia = new Array()
+for (indice = 0; indice < listaNum.length; indice++) {
+  if (listaNum[indice] >= media) {
+    maiorMedia.push(listaNum[indice])
+  }
+}
+
+console.log("Números: " + listaNum)
+console.log("Menor número: " + menor)
+console.log("Maior número: " + maior)
+console.log("Media dos números: " + media)
+console.log("Maiores ou iguais a media: " + maiorMedia)
