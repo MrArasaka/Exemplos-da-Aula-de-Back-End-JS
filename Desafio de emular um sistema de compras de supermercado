@@ -1,0 +1,25 @@
+produtos = new Array()
+qntdUnit = new Array()
+precoTotal = 0
+console.log("Qntd " + " Produto " + " Valor "  + " Total ")
+console.log("-------------------------------------------")
+
+while (true) {
+  nomeProd = prompt("Diga o nome do produto: ")
+  precoProd = parseFloat(prompt("diga o preço do produto: "))
+  qntdProd = parseFloat(prompt("Quantas unidades: "))
+  qntdUnit.push(qntdProd)
+  produtos.push(precoProd)
+  precoTotal += qntdProd * precoProd
+  precoMult = qntdProd * precoProd
+
+  
+  console.log(" " + qntdProd + "x    " + nomeProd + "    R$" + precoProd + "    R$" + precoMult)
+  console.log("-------------------------------------------")
+
+  continuar = prompt("deseja continuar: Enter ou N")
+  if (continuar == "N") {
+    break
+  }
+}
+console.log("Preco Total:" + "    R$" + precoTotal)
