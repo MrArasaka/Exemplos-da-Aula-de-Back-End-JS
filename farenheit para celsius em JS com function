@@ -1,0 +1,7 @@
+f = parseFloat(prompt("Me diga a temnperatura em Farenheint: "))
+function celsius(f) {
+  return c = (f - 32)/1.8
+}
+
+celsiusFarenheit = celsius(f)
+console.log("Sua temnperatura em celsius é: " + celsiusFarenheit )
