@@ -1,16 +1,17 @@
-function segundoGrau(){
-let a = prompt("Diga quem é a: ")
-let b = prompt("Diga quem é b : ")
-let c = prompt("Diga quem é c : ")
-
 function delta(a, b, c){
-  return delta = Math.pow(b) - 4 * a * c
+  return (Math.pow(b,2)) - 4 * a * c
 }
-resultadoDelta = delta(a, b, c)
-console.log("delta é: "+ resultadoDelta)
 
-raiz = (- b + Math.sqrt(resultadoDelta))/(2*a)
-raiz2 = (- b - Math.sqrt(resultadoDelta))/(2*a)
+
+function segundoGrau(){
+let a = Number(prompt("Diga quem é a: "))
+let b = Number(prompt("Diga quem é b : "))
+let c = Number(prompt("Diga quem é c : "))
+
+let d = delta(a,b,c) 
+
+raiz = (- b + Math.sqrt(d))/(2*a)
+raiz2 = (- b - Math.sqrt(d))/(2*a)
 
 
 console.log("As raízes da sua função é: "+ raiz + ", " + raiz2)
