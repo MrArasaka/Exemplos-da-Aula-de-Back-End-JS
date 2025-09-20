@@ -1,0 +1,16 @@
+type Usuario = { 
+    nome: string,   
+    login: string,
+    senha: string
+} 
+
+const digaOla = (usr: Usuario): void =>{
+    console.log("Olá " + usr.nome + "!")
+}
+
+const usuarioLogado: Usuario = {
+    nome: "Fábio",
+    login: "fmarques",
+    senha: "456#"
+}
+digaOla(usuarioLogado)//Olá Fábio!
