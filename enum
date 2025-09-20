@@ -1,0 +1,8 @@
+enum TiposdePagamento{
+    credito = "cartao_credito",
+    debito = "cartao_debito",
+    pix = "transf_px"
+}
+
+const pagamento: TiposdePagamento = TiposdePagamento.pix
+
