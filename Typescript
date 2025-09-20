@@ -1,0 +1,11 @@
+const nome: string = "Loloki"
+const professor: boolean = false
+const disciplinas: Array<string> = ["LPJS","ES", "TOD"]
+
+function mostrarDados(): void {
+    console.log("Nome: " + nome)
+    console.log("Professor: " + (professor ? "Sim" : "Não"))
+    console.log("Disciplinas: " + disciplinas)
+}
+
+mostrarDados()
