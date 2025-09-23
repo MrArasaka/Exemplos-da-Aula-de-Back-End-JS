@@ -1,0 +1,36 @@
+type Produto = {
+    nome: string,
+    preco: string,
+    unidade: string,
+    
+}
+
+const produtos:Produto[] = []
+
+let precoTotal = 0
+console.log("Qntd  Produto  Valor     Total")
+console.log("------------------------------")
+
+while (true) {
+    const nomePrd: string = prompt("Diga o nome do produto: ")
+    const precoPrd: Number = Number(prompt("Quanto é o preço do produto: "))
+    const qntsUnd: Number = Number(prompt("Quantas unidades foram compradas: "))
+
+    const produto: Produto = {
+        nome: nomePrd,
+        preco: precoPrd,
+        unidade: qntsUnd,
+    }
+    produtos.push(produto);
+    const precoMult = precoPrd * qntsUnd;
+    precoTotal += precoMult
+
+    console.log(" " + qntsUnd + "x    " + nomePrd + "    R$" + precoPrd + "    R$" + precoMult)
+    console.log("-------------------------------------------")
+
+const continuar = prompt("Deseja continuar? (Enter para sim / N para não): ");
+if (continuar?.toUpperCase() === "N") {
+    break;
+}
+}
+console.log("Preco Total:" + "    R$" + precoTotal)
