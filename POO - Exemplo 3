@@ -1,0 +1,43 @@
+class Livro {
+    autor: string = ""
+    ano_publicacao: number = 0
+    preco: number = 0
+    estoque: number = 0
+}
+
+class Usuario {
+    nome: string = ""
+    email: string = ""
+    telefone: string = ""
+    endereco: string = ""
+    quantidade_compras: number = 0
+}
+
+// Um pedido é composto por pelo menos por um livro
+// um pedido é feito por pelo menos um Usuario
+
+class Pedido {
+    cliente: Usuario
+    data: number = 0
+    forma_pagamento: string = ""
+    lista_livros: Livro[] = []
+
+    constructor(cliente: Usuario){
+        this.cliente = cliente
+    }
+}
+
+// um livro recebe pelo menos uma Avaliação
+// Um cliente deve fazer pelo menos uma Avaliação
+
+class Avaliacoes{
+    nota: number = 0
+    justificativa: string = ""
+    livro : Livro
+    cliente: Usuario
+
+    constructor(cliente: Usuario, livro: Livro){
+        this.cliente = cliente
+        this.livro = livro
+    }
+}
